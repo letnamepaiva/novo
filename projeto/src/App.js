@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import './App.css';
 import Tema from './componente/trocatema';
-import {banner} from './assets'
+import banner from './assets/banner.jpg';
 
 function App() {
   return(
-    <div>
+    <body>
       <Tema />
       <div>
-      <img src={banner} alt="Descrição da imagem" />
+      <img className='banner' src={banner} alt="banner"/>
     </div>
       <h1>Bem-vindo a Barber Shop</h1>
       
@@ -17,7 +17,7 @@ function App() {
       <p> Nossos serviços são dedicados ao seu sucesso pessoal. Aqui temos uma equipe premiada que demonstrou o talento de mestres barbeiros em vários concursos de estilo. Deixe nosso barbeiro ser seu estilista pessoal e você nunca ficará desapontado.</p>
       
       <p> S. Kelly</p>
-    </div>
+    </body>
   );
 }
 
