@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './trocatema.css'
 import sun from '../assets/sun.png'
 import moon from '../assets/moon.png'
+import logo from '../assets/logo.png'
 
 const Tema = () => {
     const [cor, setCor] = useState("light")
@@ -16,6 +17,9 @@ return (
       <img src={cor === "light" ? sun : moon} alt="Ícone do botão" />
       {cor === "light" ? "dark" : "light"}
     </button>
+
+    <img className='logo' src={logo} alt='logo'/>
+
   </div>
 )
 }

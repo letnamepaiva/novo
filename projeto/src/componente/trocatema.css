@@ -1,6 +1,7 @@
 .light {
     background-color: #ffffff;
     color: #000000;
+    
   }
   
   .dark {
@@ -11,22 +12,66 @@
   .botao-light {
     background-color: #ffffff;
     color: #000000;
-    float: right;
+    border-radius: 100px;
+    margin-top: 35px;
+    transition: background-color 500ms ease, transform 500ms ease;
+    border: 2px solid gray;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-flex;
+    align-items: center;
+    margin-right: 100px;
+    position: absolute;
+    left: 1000px;
+    padding: 5px
+
   }
   
   .botao-dark {
     background-color: #000000;
     color: #ffffff; 
-    float: right
+    align-items: center;
+    border-radius: 100px;
+    margin-top: 35px;
+    transition: background-color 500ms ease, transform 500ms ease;
+    border: 2px solid gray;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 1000px;
+    padding: 5px;
   }
   
-  .botao-light img,
-  .botao-dark img {
-    width: 40px; 
-    height: 40px;
-    margin: 0;
+  .botao-light img,.botao-dark img {
+    width: 20px; 
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
     padding: 0;
+    border-radius: 100px;
+    margin-bottom: 1px;
     
+  }
 
-  
+  .botao-dark:hover {
+    background-color: white;
+    color: #000000;
+    transform: scale(1.1);
+  }
+
+  .botao-light:hover {
+    background-color: black;
+    color: white ;
+    transform: scale(1.1);
+  }
+
+  .logo {
+    width: 100px; 
+    height: 100px;
+    margin-right: 20px;
+    display: inline-flex;
+    align-items:center;
+    padding: 0px, 0px;
+    position: fixed;
+    left: 300px;
   }
